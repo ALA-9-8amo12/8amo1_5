@@ -1,4 +1,4 @@
-package com.example.project_amazigh;
+package com.example.amazighapp;
 
 import android.content.Intent;
 import android.os.Bundle;

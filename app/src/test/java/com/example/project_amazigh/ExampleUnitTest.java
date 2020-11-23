@@ -1,4 +1,4 @@
-package com.example.project_amazigh;
+package com.example.amazighapp;
 
 import org.junit.Test;
 
