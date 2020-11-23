@@ -30,12 +30,12 @@ public class MenuActivity extends AppCompatActivity
     public void onClick(View v) {
         Intent score = new Intent(this, ScoreActivity.class);
         Intent over = new Intent(this, OverActivity.class);
-        Intent oefenen = new Intent(this, SpelenActivity.class);
-        Intent spelen = new Intent(this, OefenenActivity.class);
+        Intent category = new Intent (this, CategoryActivity.class);
 
         switch(v.getId()) {
             case R.id.buttonOefenen:
-                startActivity(oefenen);
+                category.putExtra("type", "oefenen");
+                startActivity(category);
                 break;
             case R.id.buttonOver:
                 startActivity(over);
@@ -44,7 +44,8 @@ public class MenuActivity extends AppCompatActivity
                 startActivity(score);
                 break;
             case R.id.buttonSpelen:
-                startActivity(spelen);
+                category.putExtra("type", "spelen");
+                startActivity(category);
                 break;
         }
     }
