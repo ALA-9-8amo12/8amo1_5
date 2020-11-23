@@ -9,6 +9,24 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
+        <activity android:name=".MenuActivity">
+
+        </activity>
+        <activity android:name=".CategoryActivity">
+
+        </activity>
+        <activity android:name=".OefenenActivity">
+
+        </activity>
+        <activity android:name=".OverActivity">
+
+        </activity>
+        <activity android:name=".ScoreActivity">
+
+        </activity>
+        <activity android:name=".SpelenActivity">
+
+        </activity>
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
