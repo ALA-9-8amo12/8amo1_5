@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "860882685273",
+    "firebase_url": "https://amazigh-app-8amo1-5.firebaseio.com",
+    "project_id": "amazigh-app-8amo1-5",
+    "storage_bucket": "amazigh-app-8amo1-5.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:860882685273:android:5785c234ddf04d69f59048",
+        "android_client_info": {
+          "package_name": "com.example.project_amazigh"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "860882685273-l33lsb93rhbea3r2gc65hmslrc80p5hu.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBgoOZMfW4RKkhs1HneI_mryDncXLuRLsQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "860882685273-l33lsb93rhbea3r2gc65hmslrc80p5hu.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
