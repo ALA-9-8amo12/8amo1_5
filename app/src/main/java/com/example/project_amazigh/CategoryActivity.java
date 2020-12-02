@@ -7,27 +7,31 @@ import android.widget.Button;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+
+Imageview = imageview;
+
 public class CategoryActivity extends AppCompatActivity
         implements View.OnClickListener {
+//    public String imageurl;
     private Button btnOK;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_category);
-        btnOK=(Button) findViewById(R.id.button);
+        btnOK=(Button) findViewById(R.id.Imagebutton1);
         btnOK.setOnClickListener(this);
-        btnOK=(Button) findViewById(R.id.button2);
+        btnOK=(Button) findViewById(R.id.Imagebutton2);
         btnOK.setOnClickListener(this);
-        btnOK=(Button) findViewById(R.id.button3);
+        btnOK=(Button) findViewById(R.id.Imagebutton3);
         btnOK.setOnClickListener(this);
-        btnOK=(Button) findViewById(R.id.button4);
+        btnOK=(Button) findViewById(R.id.Imagebutton4);
         btnOK.setOnClickListener(this);
-        btnOK=(Button) findViewById(R.id.button5);
+        btnOK=(Button) findViewById(R.id.Imagebutton5);
         btnOK.setOnClickListener(this);
-        btnOK=(Button) findViewById(R.id.button6);
+        btnOK=(Button) findViewById(R.id.Imagebutton6);
         btnOK.setOnClickListener(this);
-        btnOK=(Button) findViewById(R.id.button7);
+        btnOK=(Button) findViewById(R.id.Imagebutton7);
         btnOK.setOnClickListener(this);
     }
 
@@ -37,7 +41,7 @@ public class CategoryActivity extends AppCompatActivity
         Intent spelen = new Intent(this, OefenenActivity.class);
 
         switch(v.getId()) {
-            case R.id.button:
+            case R.id.Imagebutton1:
                 if (getIntent().getStringExtra("type") == "oefenen") {
                     oefenen.putExtra("test", "1");
                     startActivity(oefenen);
@@ -46,7 +50,7 @@ public class CategoryActivity extends AppCompatActivity
                     startActivity(spelen);
                 }
                 break;
-            case R.id.button2:
+            case R.id.Imagebutton2:
                 if (getIntent().getStringExtra("type") == "oefenen") {
                     oefenen.putExtra("test", "2");
                     startActivity(oefenen);
@@ -55,7 +59,7 @@ public class CategoryActivity extends AppCompatActivity
                     startActivity(spelen);
                 }
                 break;
-            case R.id.button3:
+            case R.id.Imagebutton3:
                 if (getIntent().getStringExtra("type") == "oefenen") {
                     oefenen.putExtra("test", "3");
                     startActivity(oefenen);
@@ -64,7 +68,7 @@ public class CategoryActivity extends AppCompatActivity
                     startActivity(spelen);
                 }
                 break;
-            case R.id.button4:
+            case R.id.Imagebutton4:
                 if (getIntent().getStringExtra("type") == "oefenen") {
                     oefenen.putExtra("test", "4");
                     startActivity(oefenen);
@@ -73,7 +77,7 @@ public class CategoryActivity extends AppCompatActivity
                     startActivity(spelen);
                 }
                 break;
-            case R.id.button5:
+            case R.id.Imagebutton5:
                 if (getIntent().getStringExtra("type") == "oefenen") {
                     oefenen.putExtra("test", "5");
                     startActivity(oefenen);
@@ -82,7 +86,7 @@ public class CategoryActivity extends AppCompatActivity
                     startActivity(spelen);
                 }
                 break;
-            case R.id.button6:
+            case R.id.Imagebutton6:
                 if (getIntent().getStringExtra("type") == "oefenen") {
                     oefenen.putExtra("test", "6");
                     startActivity(oefenen);
@@ -91,7 +95,7 @@ public class CategoryActivity extends AppCompatActivity
                     startActivity(spelen);
                 }
                 break;
-            case R.id.button7:
+            case R.id.Imagebutton7:
                 if (getIntent().getStringExtra("type") == "oefenen") {
                     oefenen.putExtra("test", "7");
                     startActivity(oefenen);
@@ -102,4 +106,5 @@ public class CategoryActivity extends AppCompatActivity
                 break;
         }
     }
+
 }
