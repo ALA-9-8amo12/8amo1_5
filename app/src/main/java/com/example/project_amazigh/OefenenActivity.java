@@ -25,21 +25,18 @@ public class OefenenActivity extends AppCompatActivity {
         databaseReference.addListenerForSingleValueEvent(new ValueEventListener() {
             @Override
             public void onDataChange(@NonNull DataSnapshot snapshot) {
-
+                viewPager = findViewById(R.id.view_pager);
+                viewPager.setAdapter(createCardAdapter(snapshot));
             }
 
             @Override
             public void onCancelled(@NonNull DatabaseError error) {
-
             }
         });
-
-        viewPager = findViewById(R.id.view_pager);
-        viewPager.setAdapter(createCardAdapter());
     }
 
-    private ViewPagerAdapter createCardAdapter() {
-        ViewPagerAdapter adapter = new ViewPagerAdapter(this);
+    private ViewPagerAdapter createCardAdapter(DataSnapshot data) {
+        ViewPagerAdapter adapter = new ViewPagerAdapter(this, data);
         return adapter;
     }
 }
