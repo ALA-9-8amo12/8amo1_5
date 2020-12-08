@@ -27,11 +27,11 @@ public class CatAdapter extends FirebaseRecyclerAdapter<
                                     int position, @NonNull Category model)
     {
 
-        holder.Nederlands.setText(model.getNederlands());
+        holder.Catnaam.setText(model.getCatnaam());
 //        holder.City.setText(model.getCity());
 //        holder.Country.setText(model.getCountry());
 
-\
+
 //        Glide.with(holder.itemView.getContext())
 //                .load(model.getUrl())
 //                .into(holder.Image);
@@ -53,12 +53,12 @@ public class CatAdapter extends FirebaseRecyclerAdapter<
 
     static class CatViewholder
             extends RecyclerView.ViewHolder {
-        TextView Nederlands;
+        TextView Catnaam;
 //        ImageView Image;
         public CatViewholder(@NonNull View itemView)
         {
             super(itemView);
-            Nederlands = itemView.findViewById(R.id.tvNederlands);
+            Catnaam = itemView.findViewById(R.id.tvCatnaam);
 //            Country = itemView.findViewById(R.id.tvCountry);
 //            City = itemView.findViewById(R.id.tvCity);
 //            Image = itemView.findViewById(R.id.ivImage);

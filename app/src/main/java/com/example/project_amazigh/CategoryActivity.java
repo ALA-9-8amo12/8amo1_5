@@ -37,7 +37,7 @@ public class CategoryActivity extends AppCompatActivity{
 //        btnOK.setOnClickListener(this);
 
         // Database verwijzing maken
-        mBase = FirebaseDatabase.getInstance().getReference().child("Dieren");
+        mBase = FirebaseDatabase.getInstance().getReference();
 
         recyclerView = findViewById(R.id.recycler1);
 
