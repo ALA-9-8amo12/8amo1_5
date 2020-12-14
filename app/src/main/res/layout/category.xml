@@ -58,6 +58,26 @@
             android:text=""
             />
 
+        <ImageView
+            android:id="@+id/tvCatplaatje"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="16dp"
+            android:contentDescription="plaatje"
+            />
+
+<!--        <ImageView-->
+<!--            android:id="@+id/ivCatplaatje"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="100pt"-->
+<!--            android:layout_marginTop="1dp"-->
+<!--            android:layout_marginEnd="1dp"-->
+<!--            android:contentDescription="plaatje"-->
+<!--            android:layout_marginRight="1dp" />-->
+
+
     </LinearLayout>
 
 </androidx.cardview.widget.CardView>
