@@ -8,7 +8,6 @@ import androidx.viewpager2.adapter.FragmentStateAdapter;
 import com.google.firebase.database.DataSnapshot;
 
 public class ViewPagerAdapter extends FragmentStateAdapter {
-    private static final int CARD_ITEM_SIZE = 15;
     private DataSnapshot data;
 
     public ViewPagerAdapter(@NonNull FragmentActivity fragmentActivity, DataSnapshot data) {
@@ -21,6 +20,7 @@ public class ViewPagerAdapter extends FragmentStateAdapter {
     }
 
     @Override public int getItemCount() {
+        int CARD_ITEM_SIZE = (int) data.getChildrenCount() - 1;
         return CARD_ITEM_SIZE;
     }
 }

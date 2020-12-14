@@ -21,7 +21,7 @@ public class OefenenActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_oefenen);
 
-        DatabaseReference databaseReference = FirebaseDatabase.getInstance().getReference("Dieren");
+        DatabaseReference databaseReference = FirebaseDatabase.getInstance().getReference("Kleuren");
         databaseReference.addListenerForSingleValueEvent(new ValueEventListener() {
             @Override
             public void onDataChange(@NonNull DataSnapshot snapshot) {
