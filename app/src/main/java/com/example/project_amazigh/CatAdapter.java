@@ -1,5 +1,7 @@
 package com.example.project_amazigh;
 
+import android.content.Intent;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -26,7 +28,7 @@ public class CatAdapter extends FirebaseRecyclerAdapter<
 
     @Override
     protected void onBindViewHolder(@NonNull CatViewholder holder,
-                                    int position, @NonNull Category model)
+                                    int position, @NonNull final Category model)
     {
 
         holder.Catnaam.setText(model.getCatnaam());
@@ -34,10 +36,18 @@ public class CatAdapter extends FirebaseRecyclerAdapter<
 //        holder.City.setText(model.getCity());
 //        holder.Country.setText(model.getCountry());
 
-
-       Glide.with(holder.itemView.getContext())
+        Glide.with(holder.itemView.getContext())
                 .load(model.getCatplaatje())
                 .into(holder.Catplaatje);
+
+        holder.itemView.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(v.getContext(), OefenenActivity.class);
+                intent.putExtra("Categorie", model.getCatnaam());
+                v.getContext().startActivity(intent);
+            }
+        });
     }
 
 
