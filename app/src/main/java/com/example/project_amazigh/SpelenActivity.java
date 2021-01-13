@@ -38,9 +38,13 @@ public class SpelenActivity extends Fragment {
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         if (getArguments() != null) {
+            //counter wordt opgehaald
             counter = getArguments().getInt(ARG_COUNT);
         }
     }
+
+
+    
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
