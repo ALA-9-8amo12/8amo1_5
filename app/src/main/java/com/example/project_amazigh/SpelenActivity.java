@@ -19,11 +19,11 @@ public class SpelenActivity extends Fragment {
     private static final String ARG_COUNT = "param1";
     //hiermee houd je bij hoeveel fragments je hebt
     private Integer counter;
-    private int[] COLOR_MAP = {
-            R.color.red_100, R.color.red_300, R.color.red_500, R.color.red_700, R.color.blue_100,
-            R.color.blue_300, R.color.blue_500, R.color.blue_700, R.color.green_100, R.color.green_300,
-            R.color.green_500, R.color.green_700
-    };
+//    private int[] COLOR_MAP = {
+//            R.color.red_100, R.color.red_300, R.color.red_500, R.color.red_700, R.color.blue_100,
+//            R.color.blue_300, R.color.blue_500, R.color.blue_700, R.color.green_100, R.color.green_300,
+//            R.color.green_500, R.color.green_700
+//    };
     public SpelenActivity() {
         // Required empty public constructor
     }
@@ -53,7 +53,9 @@ public class SpelenActivity extends Fragment {
     }
     @Override public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
-        view.setBackgroundColor(ContextCompat.getColor(getContext(), COLOR_MAP[counter]));
+//        view.setBackgroundColor(ContextCompat.getColor(getContext(), COLOR_MAP[counter]));
+
+        // variables toegevoegd voor de layout
         TextView tvDier = view.findViewById(R.id.tv_dier);
         ImageView ivDier = view.findViewById(R.id.iv_dier);
 
