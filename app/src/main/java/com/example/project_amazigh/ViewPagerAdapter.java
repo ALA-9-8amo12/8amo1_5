@@ -13,7 +13,7 @@ public class ViewPagerAdapter extends FragmentStateAdapter {
     @NonNull @Override public Fragment createFragment(int position) {
 
         // connectie met spelenactivitiy
-        return SpelenActivity.newInstance(position);
+        return CardFragment.newInstance(position);
     }
     @Override public int getItemCount() {
         return CARD_ITEM_SIZE;
