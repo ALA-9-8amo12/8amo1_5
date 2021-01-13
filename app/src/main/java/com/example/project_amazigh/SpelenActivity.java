@@ -17,7 +17,7 @@ import androidx.fragment.app.Fragment;
 
 public class SpelenActivity extends Fragment {
     private static final String ARG_COUNT = "param1";
-  
+    //hiermee houd je bij hoeveel fragments je hebt
     private Integer counter;
     private int[] COLOR_MAP = {
             R.color.red_100, R.color.red_300, R.color.red_500, R.color.red_700, R.color.blue_100,
