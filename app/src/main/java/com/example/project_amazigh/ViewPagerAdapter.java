@@ -12,7 +12,7 @@ public class ViewPagerAdapter extends FragmentStateAdapter {
     }
     @NonNull @Override public Fragment createFragment(int position) {
 
-        // connectie met spelenactivitiy 
+        // connectie met spelenactivitiy
         return SpelenActivity.newInstance(position);
     }
     @Override public int getItemCount() {
