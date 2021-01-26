@@ -20,7 +20,7 @@ public class ViewPagerAdapter extends FragmentStateAdapter {
     }
 
     @Override public int getItemCount() {
-        int CARD_ITEM_SIZE = (int) data.getChildrenCount() - 1;
+        int CARD_ITEM_SIZE = (int) data.getChildrenCount() - 2;
         return CARD_ITEM_SIZE;
     }
 }
